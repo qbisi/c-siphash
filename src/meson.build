@@ -42,6 +42,7 @@ if not meson.is_subproject()
                 description: project_description,
                 filebase: 'libcsiphash-'+major,
                 libraries: libcsiphash_both.get_shared_lib(),
+                libraries_private: libcsiphash_both.get_static_lib(),
                 name: 'libcsiphash',
                 version: meson.project_version(),
         )
